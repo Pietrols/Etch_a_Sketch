@@ -3,8 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body class="body">
+    <div class="header">
+      <h1 class="heading">ETCH A SKETCH</h1>
+    </div>
+
+    <div class="container"></div>
+    <div class="footer">
+      <!-- Select Button with Color Options -->
+      <div class="color-picker">
+        <label for="color-select">Select Color:</label>
+        <select id="color-select" class="select">
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+          <option value="purple">Purple</option>
+        </select>
+      </div>
+      <button class="random">Random</button>
+      <button class="erase">Erase</button>
+      <button class="clear">Clear</button>
+    </div>
+  </body>
 </html>
